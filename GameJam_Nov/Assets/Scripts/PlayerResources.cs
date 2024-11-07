@@ -48,6 +48,7 @@ public class PlayerResources : MonoBehaviour
     {
         storedFood += itemValue;
         FoodUI.value = storedFood / 100;
+        print(storedFood);
     }
     public void AddWater(float itemValue)
     {
