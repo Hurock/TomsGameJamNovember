@@ -3323,7 +3323,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 03dbf8ff7f8001749b1e315d016b44c6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3394,6 +3394,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6426994593650694861, guid: 6a7bb190a6e90d34caf21a4247121b60, type: 3}
+      propertyPath: itemType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6426994593650694861, guid: 6a7bb190a6e90d34caf21a4247121b60, type: 3}
+      propertyPath: fillAmount
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5882104580471283234, guid: 6a7bb190a6e90d34caf21a4247121b60, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7010308613797449757, guid: 6a7bb190a6e90d34caf21a4247121b60, type: 3}
       propertyPath: m_Name
       value: Item
@@ -3588,6 +3600,10 @@ PrefabInstance:
       propertyPath: BatteryUI
       value: 
       objectReference: {fileID: 662526045}
+    - target: {fileID: 4031978034526036979, guid: 44d420734a7b40942900b40df7342855, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6088191379372109423, guid: 44d420734a7b40942900b40df7342855, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.1007735
@@ -3641,12 +3657,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6723977061092832568, guid: 44d420734a7b40942900b40df7342855, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6723977061092832568, guid: 44d420734a7b40942900b40df7342855, type: 3}
       propertyPath: m_MaskInteraction
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6735072900005940700, guid: 44d420734a7b40942900b40df7342855, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7446315828430442832, guid: 44d420734a7b40942900b40df7342855, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8310738097556012771, guid: 44d420734a7b40942900b40df7342855, type: 3}
       propertyPath: m_LocalScale.x

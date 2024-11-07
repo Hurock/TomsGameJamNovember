@@ -16,7 +16,7 @@ public class Item : MonoBehaviour
     }
 
     [SerializeField]
-    float fillAmount;
+    float itemValue;
 
     public ObjectType itemType;
 
@@ -37,27 +37,31 @@ public class Item : MonoBehaviour
         if (col.gameObject.tag == "Player")
         {
             //show text to grab item
-            CollectItem();
+            GameObject player = col.gameObject;
+            CollectItem(player);
             Destroy(gameObject);
         }
         
         
     }
 
-    void CollectItem()
+    void CollectItem(GameObject player)
     {
         switch(itemType)
         {
             case ObjectType.Battery:
                 print("Battery collected");
+                player.GetComponent<PlayerResources>().AddBattery(itemValue);
                 break;
 
             case ObjectType.Food:
                 print("Food collected");
+                player.GetComponent<PlayerResources>().AddFood(itemValue);
                 break;
 
             case ObjectType.Water:
                 print("Water collected");
+                player.GetComponent<PlayerResources>().AddWater(itemValue);
                 break;
             
         }
