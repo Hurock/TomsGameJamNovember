@@ -181,6 +181,7 @@ GameObject:
   - component: {fileID: 4356620697893871622}
   - component: {fileID: 4546257961140841270}
   - component: {fileID: 3090923088930941403}
+  - component: {fileID: 6828121634610349133}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -300,6 +301,23 @@ MonoBehaviour:
   FoodUI: {fileID: 0}
   WaterUI: {fileID: 0}
   BatteryUI: {fileID: 0}
+--- !u!114 &6828121634610349133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6735072900005940700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd010a1d80c995d438fa84fb3295433f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnDelayMin: 5
+  spawnDelayMax: 10
+  maxSpawnDistance: 8
+  minSpawnDistance: 0
+  monsterPrefab: {fileID: 3408591633665119856, guid: cb65c9397d48a1a4b90fe3ce28631c67, type: 3}
 --- !u!1 &7769034481675287219
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,6 +412,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1405941632386762143}
   - component: {fileID: 4891487837816554979}
+  - component: {fileID: 2667866141605987963}
+  - component: {fileID: 6698895231244422410}
   m_Layer: 0
   m_Name: Flashlight
   m_TagString: Untagged
@@ -458,12 +478,74 @@ SpriteMask:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3fc4a30fd627a1e4eafd41aa03b0f591, type: 3}
-  m_MaskAlphaCutoff: 0.3
+  m_MaskAlphaCutoff: 1
   m_FrontSortingLayerID: 0
   m_BackSortingLayerID: 0
   m_FrontSortingLayer: 0
   m_BackSortingLayer: 0
-  m_FrontSortingOrder: 0
+  m_FrontSortingOrder: 2
   m_BackSortingOrder: 0
-  m_IsCustomRangeActive: 0
+  m_IsCustomRangeActive: 1
   m_SpriteSortPoint: 0
+--- !u!50 &2667866141605987963
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8953509758792224111}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!70 &6698895231244422410
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8953509758792224111}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.78, y: 0}
+  m_Size: {x: 11.99, y: 5.8}
+  m_Direction: 1
