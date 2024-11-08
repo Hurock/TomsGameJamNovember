@@ -8,7 +8,7 @@ public class PlayerResources : MonoBehaviour
 
     public float storedFood;
     public float storedWater;
-    public float batterylevel;
+    public float batteryLevel;
 
     [SerializeField]
     Slider FoodUI;
@@ -22,7 +22,7 @@ public class PlayerResources : MonoBehaviour
     {
         storedFood = 0;
         storedWater = 0;
-        batterylevel = 1;
+        batteryLevel = 1;
 
         InitializeUI();
     }
@@ -41,6 +41,23 @@ public class PlayerResources : MonoBehaviour
 
         FoodUI.value = storedFood;
         WaterUI.value = storedWater;
-        BatteryUI.value = batterylevel; 
+        BatteryUI.value = batteryLevel; 
+    }
+
+    public void AddFood(float itemValue)
+    {
+        storedFood += itemValue;
+        FoodUI.value = storedFood / 100;
+        print(storedFood);
+    }
+    public void AddWater(float itemValue)
+    {
+        storedWater += itemValue;
+        WaterUI.value += storedWater / 100;
+    }
+    public void AddBattery(float itemValue)
+    {
+        batteryLevel += itemValue;
+        BatteryUI.value = batteryLevel / 100;
     }
 }
