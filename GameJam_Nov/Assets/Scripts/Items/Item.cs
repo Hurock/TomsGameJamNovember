@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.VersionControl;
 using UnityEngine;
 
 public class Item : MonoBehaviour
@@ -20,30 +21,53 @@ public class Item : MonoBehaviour
 
     public ObjectType itemType;
 
+    public GameObject interactionText;
+
+    bool isInteracting;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
+        interactionText.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetButtonDown("Interact"))
+        {
+            isInteracting = true;
+        }
+        else if (Input.GetButtonUp("Interact"))
+        {
+            isInteracting = false;
+        }
         
     }
 
-    private void OnTriggerEnter2D(Collider2D col)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (col.gameObject.tag == "Player")
+        if (isInteracting)
         {
-            //show text to grab item
-            GameObject player = col.gameObject;
+            GameObject player = collision.gameObject;
             CollectItem(player);
             Destroy(gameObject);
         }
-        
-        
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            interactionText.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        interactionText.SetActive(false);
+    }
+
 
     void CollectItem(GameObject player)
     {
