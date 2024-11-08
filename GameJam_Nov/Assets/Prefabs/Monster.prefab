@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7877406731190749995}
   - component: {fileID: 6380299594652558187}
   - component: {fileID: 1918989014002024998}
+  - component: {fileID: -8976404332012317674}
   m_Layer: 0
   m_Name: Monster
   m_TagString: Enemy
@@ -102,8 +103,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 1743651085, guid: 390b68c556fb16a4b82e1fee19950c09, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 1439777566, guid: cf66e91d1e6036a44af6d9098fa42990, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -162,3 +163,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1
+--- !u!111 &-8976404332012317674
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3408591633665119856}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 2c8e3961f9153ae4bbd859eb0510564a, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
