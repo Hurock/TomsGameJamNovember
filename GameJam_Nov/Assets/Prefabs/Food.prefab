@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemValue: 20
-  itemType: 2
+  itemType: 1
   interactionText: {fileID: 6964497552550356484}
 --- !u!212 &5882104580471283234
 SpriteRenderer:
