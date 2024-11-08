@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.Pool;
 
 public class Movement : MonoBehaviour
@@ -16,11 +17,14 @@ public class Movement : MonoBehaviour
     Vector3 mousePos;
     Vector3 objectPos;
 
+    int layer;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         col = rb.GetComponent<Collider2D>();
+        layer = gameObject.layer;
     }
 
     // Update is called once per frame
@@ -38,5 +42,6 @@ public class Movement : MonoBehaviour
         playerRotation = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
 
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, playerRotation));
+
     }
 }
