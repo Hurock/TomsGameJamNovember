@@ -22,7 +22,7 @@ public class PlayerResources : MonoBehaviour
     {
         storedFood = 0;
         storedWater = 0;
-        batteryLevel = 1;
+        batteryLevel = 0;
 
         InitializeUI();
     }
@@ -35,9 +35,6 @@ public class PlayerResources : MonoBehaviour
 
     void InitializeUI()
     {
-        if (FoodUI == null) return;
-        if (WaterUI == null) return;
-        if (BatteryUI == null) return;
 
         FoodUI.value = storedFood;
         WaterUI.value = storedWater;
@@ -48,7 +45,6 @@ public class PlayerResources : MonoBehaviour
     {
         storedFood += itemValue;
         FoodUI.value = storedFood / 100;
-        print(storedFood);
     }
     public void AddWater(float itemValue)
     {

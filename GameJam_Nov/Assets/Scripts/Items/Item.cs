@@ -65,7 +65,10 @@ public class Item : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        interactionText.SetActive(false);
+        if (collision.gameObject.tag == "Player")
+        {
+            interactionText.SetActive(false);
+        }
     }
 
 
