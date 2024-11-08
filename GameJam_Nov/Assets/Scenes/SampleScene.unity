@@ -1915,6 +1915,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2010,6 +2011,102 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 544253253}
   offset: {x: 0, y: 0, z: -10}
+--- !u!82 &519420034
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 778aaba22db231047b210b95edbef76a, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &525469319
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2980,6 +3077,10 @@ PrefabInstance:
     - target: {fileID: 165455012808910773, guid: 5a3cf64e8e27b384791dbc6b802f5c80, type: 3}
       propertyPath: m_Name
       value: cash register (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176589935037388590, guid: 5a3cf64e8e27b384791dbc6b802f5c80, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6953321302520399579, guid: 5a3cf64e8e27b384791dbc6b802f5c80, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5499,6 +5600,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cash register (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4176589935037388590, guid: 5a3cf64e8e27b384791dbc6b802f5c80, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6953321302520399579, guid: 5a3cf64e8e27b384791dbc6b802f5c80, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.65
@@ -6219,6 +6324,10 @@ PrefabInstance:
     - target: {fileID: 165455012808910773, guid: 5a3cf64e8e27b384791dbc6b802f5c80, type: 3}
       propertyPath: m_Name
       value: cash register (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176589935037388590, guid: 5a3cf64e8e27b384791dbc6b802f5c80, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6953321302520399579, guid: 5a3cf64e8e27b384791dbc6b802f5c80, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7052,6 +7161,10 @@ PrefabInstance:
     - target: {fileID: 165455012808910773, guid: 5a3cf64e8e27b384791dbc6b802f5c80, type: 3}
       propertyPath: m_Name
       value: cash register (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176589935037388590, guid: 5a3cf64e8e27b384791dbc6b802f5c80, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4882197456305294917, guid: 5a3cf64e8e27b384791dbc6b802f5c80, type: 3}
       propertyPath: m_AutoTiling
@@ -16669,114 +16782,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e6c5a18581efec4d9ddfa769a40a808, type: 3}
---- !u!1 &1921666815 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7146210359441244180, guid: 44d420734a7b40942900b40df7342855, type: 3}
-  m_PrefabInstance: {fileID: 8299938030940842468}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &1921666817
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1921666815}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 03dbf8ff7f8001749b1e315d016b44c6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 19.2, y: 10.8}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 2
-  m_SpriteSortPoint: 1
---- !u!331 &1921666818
-SpriteMask:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1921666815}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 03dbf8ff7f8001749b1e315d016b44c6, type: 3}
-  m_MaskAlphaCutoff: 0.2
-  m_FrontSortingLayerID: 0
-  m_BackSortingLayerID: 0
-  m_FrontSortingLayer: 0
-  m_BackSortingLayer: 0
-  m_FrontSortingOrder: 0
-  m_BackSortingOrder: 0
-  m_IsCustomRangeActive: 0
-  m_SpriteSortPoint: 0
 --- !u!1001 &1946519115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17187,6 +17192,10 @@ PrefabInstance:
     - target: {fileID: 165455012808910773, guid: 5a3cf64e8e27b384791dbc6b802f5c80, type: 3}
       propertyPath: m_Name
       value: cash register (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176589935037388590, guid: 5a3cf64e8e27b384791dbc6b802f5c80, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6953321302520399579, guid: 5a3cf64e8e27b384791dbc6b802f5c80, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18089,6 +18098,22 @@ PrefabInstance:
       propertyPath: BatteryUI
       value: 
       objectReference: {fileID: 662526045}
+    - target: {fileID: 4356620697893871622, guid: 44d420734a7b40942900b40df7342855, type: 3}
+      propertyPath: m_Mass
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4356620697893871622, guid: 44d420734a7b40942900b40df7342855, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4356620697893871622, guid: 44d420734a7b40942900b40df7342855, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4356620697893871622, guid: 44d420734a7b40942900b40df7342855, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4546257961140841270, guid: 44d420734a7b40942900b40df7342855, type: 3}
       propertyPath: m_Radius
       value: 0.5
@@ -18188,12 +18213,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6735072900005940700, guid: 44d420734a7b40942900b40df7342855, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1139787056}
-    - targetCorrespondingSourceObject: {fileID: 7146210359441244180, guid: 44d420734a7b40942900b40df7342855, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1921666817}
-    - targetCorrespondingSourceObject: {fileID: 7146210359441244180, guid: 44d420734a7b40942900b40df7342855, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1921666818}
   m_SourcePrefab: {fileID: 100100000, guid: 44d420734a7b40942900b40df7342855, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
